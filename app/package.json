@@ -1,0 +1,31 @@
+{
+  "name": "flappyapp",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "connect-livereload": "~0.5.2",
+    "express": "~4.10.4",
+    "gulp": "~3.8.10",
+    "gulp-sass": "~1.1.0",
+    "tiny-lr": "~0.1.4"
+  },
+  "devDependencies": {
+    "connect-livereload": "~0.5.2",
+    "tiny-lr": "~0.1.4",
+    "gulp": "~3.8.10",
+    "gulp-sass": "~1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Dmeowmixer/flappyapp.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Dmeowmixer/flappyapp/issues"
+  }
+}
