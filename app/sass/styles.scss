@@ -1,6 +1,8 @@
 @import "http://fonts.googleapis.com/css?family=Lato:400,700.css";
 @import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation.scss";
+$break-small: 400px;
+$break-medium:768px;
 $flappy-dark-grey:#2B2D33;
 $flappy-blue:#00CCCC;
 
@@ -10,6 +12,9 @@ body{
 .abdominals{
   padding-top:40px;
   background-color:white;
+  @media screen and (max-width:$break-medium){
+    padding-top:0px;
+  }
 }
 header{
   background-image:url("/images/border.png");
@@ -18,6 +23,7 @@ header{
   position:relative;
   background-color:$flappy-dark-grey;
   padding-bottom:20px;
+
   ul{
     display:inline;
     li{
@@ -26,11 +32,22 @@ header{
   }
   h1{
     font-family: 'Lato', sans-serif;
+    font-weight:700;
     margin-top:30px;
     letter-spacing:6px;
     word-spacing:70px;
     display:block;
     color:$flappy-blue;
+      @media screen and (max-width:$break-medium){
+        margin-left:160px;
+        font-size:20px;
+        height:100px;
+      }
+    .linebreak{
+      @media screen and (max-width:$break-medium){
+        display:block;
+      }
+    }
   }
   .birdnturtlesimg{
     margin-top:-75px;
@@ -40,6 +57,9 @@ header{
     height:90px;
     width:110px;
     background-repeat:no-repeat;
+    @media screen and (max-width:$break-medium){
+      margin-left:30px;
+    }
   }
   .sub-nav{
     font-family: 'Lato', sans-serif;
@@ -55,7 +75,10 @@ header{
         margin-left:0px;
         letter-spacing:0.8px;
         word-spacing:15px;
-        &:hover{
+        @media screen and (max-width:$break-medium){
+          border-bottom:0px;
+        }
+          &:hover{
           border-color:white;
           a{
             color:white;
@@ -85,12 +108,15 @@ header{
     a:hover{
       color:$flappy-blue;
     }
-    // .sub-nav.clicked{
-    //   color:$flappy-blue;
-    // }
   }
   .sub-nav:hover{
     color:white;
+  }
+}
+.cheese{
+  @media screen and (max-width:$break-medium){
+    padding-left:0px;
+    padding-right:0px;
   }
 }
 .main_image{
@@ -99,6 +125,7 @@ header{
   height:260px;
   width:auto;
   border:solid 3px black;
+
 }
 ul.features{
   font-family: 'Lato', sans-serif;
@@ -110,6 +137,14 @@ ul.features{
 .blackfeature{
   width:220px;
   background-color:black;
+  @media screen and (max-width:$break-medium){
+    width:737px;
+  }
+}
+.right_oblique{
+  @media screen and (max-width:$break-medium){
+    padding-left:0px;
+  }
 }
 .feature_list_item{
   width:220px;
@@ -120,6 +155,9 @@ ul.features{
   border-bottom:0.9px solid gray;
   color:black;
   background-color:$flappy-blue;
+  @media screen and (max-width:$break-medium){
+    width:737px;
+  }
 }
 .content_text{
   p{
@@ -139,6 +177,9 @@ footer{
     padding-left:30px;
     border-left:3px solid $flappy-blue;
     margin-top:30px;
+    @media screen and (max-width:$break-medium){
+      border-left:0px;
+    }
   }
 
 }
@@ -161,10 +202,19 @@ a:visited{
 .text{
   color:$flappy-blue;
 }
-
+div.flappyCopyRight.row{
+  @media screen and (max-width:$break-medium){
+  margin:0px;
+  }
+}
 .copyright{
   font-family: 'Lato', sans-serif;
   font-weight:700;
   text-align:center;
   background-color:$flappy-blue;
+  @media screen and (max-width:$break-medium){
+    background-color:$flappy-dark-grey;
+    color:white;
+
+  }
 }
