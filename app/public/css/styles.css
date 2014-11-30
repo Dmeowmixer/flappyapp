@@ -5557,13 +5557,20 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
+body {
+  background-color: #2B2D33; }
+
+.abdominals {
+  padding-top: 40px;
+  background-color: white; }
+
 header {
   background-image: url("/images/border.png");
   background-repeat: repeat-x;
   display: block;
   position: relative;
   background-color: #2B2D33;
-  margin-bottom: 40px; }
+  padding-bottom: 20px; }
   header ul {
     display: inline; }
     header ul li {
@@ -5585,18 +5592,22 @@ header {
     background-repeat: no-repeat; }
   header .sub-nav {
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     padding-right: 0px;
     padding-left: 0px;
-    border-bottom: 5px solid #00CCCC;
     color: #00CCCC;
     margin-top: 40px; }
     header .sub-nav nav ul {
       margin-left: 0px; }
       header .sub-nav nav ul li.nav_item {
+        border-bottom: 5px solid #00CCCC;
         margin-left: 0px;
         letter-spacing: 0.8px;
         word-spacing: 15px; }
+        header .sub-nav nav ul li.nav_item:hover {
+          border-color: white; }
+          header .sub-nav nav ul li.nav_item:hover a {
+            color: white; }
         header .sub-nav nav ul li.nav_item a {
           padding-right: 0px;
           padding-left: 0px; }
@@ -5612,8 +5623,6 @@ header {
       color: #00CCCC; }
     header .sub-nav a:hover {
       color: #00CCCC; }
-    header .sub-nav .sub-nav.clicked {
-      color: #00CCCC; }
   header .sub-nav:hover {
     color: white; }
 
@@ -5625,6 +5634,8 @@ header {
   border: solid 3px black; }
 
 ul.features {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   margin-left: 15px;
   width: 200px;
   text-align: center; }
@@ -5644,6 +5655,8 @@ ul.features {
   background-color: #00CCCC; }
 
 .content_text p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 22px; }
 
 footer {
