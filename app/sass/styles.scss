@@ -1,7 +1,7 @@
 @import "http://fonts.googleapis.com/css?family=Lato:400,700.css";
 @import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation.scss";
-$break-small: 400px;
+$break-small: 480px;
 $break-medium:768px;
 $flappy-dark-grey:#2B2D33;
 $flappy-blue:#00CCCC;
@@ -42,14 +42,21 @@ header{
         margin-left:160px;
         font-size:20px;
         height:100px;
+      @media screen and (max-width:$break-small){
+        display:inline-block;
+      }
       }
     .linebreak{
       @media screen and (max-width:$break-medium){
         display:block;
         color:white;
       }
+      @media screen and (max-width:$break-small){
+        display:inline;
+      }
     }
   }
+  // END H1
   .birdnturtlesimg{
     margin-top:-75px;
     margin-left:180px;
@@ -83,6 +90,9 @@ header{
         word-spacing:15px;
         @media screen and (max-width:$break-medium){
           border-bottom:0px;
+        }
+        @media screen and (max-width:$break-small){
+          display:none;
         }
           &:hover{
           border-color:white;

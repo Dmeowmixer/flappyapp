@@ -5590,11 +5590,17 @@ header {
       header h1 {
         margin-left: 160px;
         font-size: 20px;
-        height: 100px; } }
+        height: 100px; }
+        @media screen and (max-width: 480px) {
+          header h1 {
+            display: inline-block; } } }
     @media screen and (max-width: 768px) {
       header h1 .linebreak {
         display: block;
         color: white; } }
+    @media screen and (max-width: 480px) {
+      header h1 .linebreak {
+        display: inline; } }
   header .birdnturtlesimg {
     margin-top: -75px;
     margin-left: 180px;
@@ -5627,6 +5633,9 @@ header {
         @media screen and (max-width: 768px) {
           header .sub-nav nav ul li.nav_item {
             border-bottom: 0px; } }
+        @media screen and (max-width: 480px) {
+          header .sub-nav nav ul li.nav_item {
+            display: none; } }
         header .sub-nav nav ul li.nav_item:hover {
           border-color: white; }
           header .sub-nav nav ul li.nav_item:hover a {
