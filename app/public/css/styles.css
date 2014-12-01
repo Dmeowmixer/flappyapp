@@ -5593,7 +5593,8 @@ header {
         height: 100px; } }
     @media screen and (max-width: 768px) {
       header h1 .linebreak {
-        display: block; } }
+        display: block;
+        color: white; } }
   header .birdnturtlesimg {
     margin-top: -75px;
     margin-left: 180px;
@@ -5604,14 +5605,18 @@ header {
     background-repeat: no-repeat; }
     @media screen and (max-width: 768px) {
       header .birdnturtlesimg {
-        margin-left: 30px; } }
+        margin-left: 30px;
+        margin-top: -110px; } }
   header .sub-nav {
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     padding-right: 0px;
     padding-left: 0px;
     color: #00CCCC;
     margin-top: 40px; }
+    @media screen and (max-width: 768px) {
+      header .sub-nav {
+        padding-right: 25px; } }
     header .sub-nav nav ul {
       margin-left: 0px; }
       header .sub-nav nav ul li.nav_item {
@@ -5655,6 +5660,9 @@ header {
   height: 260px;
   width: auto;
   border: solid 3px black; }
+  @media screen and (max-width: 768px) {
+    .main_image {
+      border: none; } }
 
 ul.features {
   font-family: 'Lato', sans-serif;
@@ -5662,6 +5670,9 @@ ul.features {
   margin-left: 15px;
   width: 200px;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    ul.features {
+      margin-left: 0px; } }
 
 .blackfeature {
   width: 220px;
@@ -5672,7 +5683,8 @@ ul.features {
 
 @media screen and (max-width: 768px) {
   .right_oblique {
-    padding-left: 0px; } }
+    padding-left: 0px;
+    padding-right: 0px; } }
 
 .feature_list_item {
   width: 220px;
@@ -5685,12 +5697,19 @@ ul.features {
   background-color: #00CCCC; }
   @media screen and (max-width: 768px) {
     .feature_list_item {
-      width: 737px; } }
+      width: 737px;
+      border-bottom: 1px solid gray;
+      border-opacity: 0.6; } }
 
 .content_text p {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 22px; }
+  @media screen and (max-width: 768px) {
+    .content_text p {
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-bottom: 20px; } }
 
 footer {
   font-family: 'Lato', sans-serif;
@@ -5702,6 +5721,8 @@ footer {
     padding-left: 30px;
     border-left: 3px solid #00CCCC;
     margin-top: 30px; }
+    footer .feet li:hover a {
+      color: white; }
     @media screen and (max-width: 768px) {
       footer .feet {
         border-left: 0px; } }

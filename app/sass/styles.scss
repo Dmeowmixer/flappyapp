@@ -46,6 +46,7 @@ header{
     .linebreak{
       @media screen and (max-width:$break-medium){
         display:block;
+        color:white;
       }
     }
   }
@@ -59,15 +60,20 @@ header{
     background-repeat:no-repeat;
     @media screen and (max-width:$break-medium){
       margin-left:30px;
+      margin-top:-110px;
     }
   }
   .sub-nav{
     font-family: 'Lato', sans-serif;
-    font-weight:700;
+    font-weight:800;
     padding-right:0px;
     padding-left:0px;
     color:$flappy-blue;
     margin-top:40px;
+    @media screen and (max-width:$break-medium){
+      padding-right:25px;
+    }
+
     nav ul{
       margin-left:0px;
       li.nav_item{
@@ -125,7 +131,9 @@ header{
   height:260px;
   width:auto;
   border:solid 3px black;
-
+  @media screen and (max-width:$break-medium){
+    border:none;
+  }
 }
 ul.features{
   font-family: 'Lato', sans-serif;
@@ -133,6 +141,9 @@ ul.features{
   margin-left:15px;
   width:200px;
   text-align:center;
+  @media screen and (max-width:$break-medium){
+    margin-left:0px;
+  }
 }
 .blackfeature{
   width:220px;
@@ -142,8 +153,10 @@ ul.features{
   }
 }
 .right_oblique{
+
   @media screen and (max-width:$break-medium){
     padding-left:0px;
+    padding-right:0px;
   }
 }
 .feature_list_item{
@@ -157,6 +170,9 @@ ul.features{
   background-color:$flappy-blue;
   @media screen and (max-width:$break-medium){
     width:737px;
+    border-bottom:1px solid gray;
+    border-opacity:0.6;
+
   }
 }
 .content_text{
@@ -164,6 +180,11 @@ ul.features{
     font-family: 'Lato', sans-serif;
     font-weight:700;
     font-size:22px;
+    @media screen and (max-width:$break-medium){
+      margin-top:20px;
+      margin-left:30px;
+      margin-bottom:20px;
+    }
   }
 }
 // Header End
@@ -174,6 +195,11 @@ footer{
   background-repeat:repeat-x;
   background-color:$flappy-dark-grey;
   .feet{
+    & li:hover{
+      a{
+        color:white;
+      }
+    }
     padding-left:30px;
     border-left:3px solid $flappy-blue;
     margin-top:30px;
