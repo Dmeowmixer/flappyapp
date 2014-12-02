@@ -6,13 +6,14 @@ $break-medium:768px;
 $flappy-dark-grey:#2B2D33;
 $flappy-blue:#00CCCC;
 
+
 body{
   background-color:$flappy-dark-grey;
 }
 .abdominals{
   padding-top:40px;
   background-color:white;
-  @media screen and (max-width:$break-medium){
+  @media #{$medium-down}{
     padding-top:0px;
   }
 }
@@ -23,7 +24,6 @@ header{
   position:relative;
   background-color:$flappy-dark-grey;
   padding-bottom:20px;
-
   ul{
     display:inline;
     li{
@@ -38,23 +38,23 @@ header{
     word-spacing:70px;
     display:block;
     color:$flappy-blue;
-      @media screen and (max-width:$break-medium){
-        margin-left
-        :160px;
+      @media #{$medium-down}{
+        margin-left:160px;
         font-size:20px;
         height:100px;
-        @media screen and (max-width:$break-small){
-        display:inline-block;
-        word-spacing:1px;
       }
-      
+      @media #{$small-only}{
+      display:inline-block;
+      word-spacing:1px;
+      margin-left:100px;
       }
+
     .linebreak{
-      @media screen and (max-width:$break-medium){
+      @media #{$medium-down}{
         display:block;
         color:white;
       }
-      @media screen and (max-width:$break-small){
+      @media #{$small-only}{
         display:inline;
       }
     }
@@ -68,12 +68,13 @@ header{
     height:90px;
     width:110px;
     background-repeat:no-repeat;
-    @media screen and (max-width:$break-medium){
+    @media #{$medium-down}{
       margin-left:30px;
       margin-top:-110px;
     }
-    @media #{$small-only} {
-      
+    @media #{$small-only}{
+    display:inline-block;
+    word-spacing:1px;
     }
   }
   .sub-nav{
@@ -83,10 +84,9 @@ header{
     padding-left:0px;
     color:$flappy-blue;
     margin-top:40px;
-    @media screen and (max-width:$break-medium){
+    @media #{$medium-down}{
       padding-right:25px;
     }
-
     nav ul{
       margin-left:0px;
       li.nav_item{
@@ -94,11 +94,8 @@ header{
         margin-left:0px;
         letter-spacing:0.8px;
         word-spacing:15px;
-        @media screen and (max-width:$break-medium){
+        @media #{$medium-down}{
           border-bottom:0px;
-        }
-        @media screen and (max-width:$break-small){
-          display:none;
         }
           &:hover{
           border-color:white;
@@ -138,7 +135,7 @@ header{
 // END HEADER
 
 .cheese{
-  @media screen and (max-width:$break-medium){
+  @media #{$medium-down}{
     padding-left:0px;
     padding-right:0px;
   }
@@ -149,11 +146,8 @@ header{
   height:260px;
   width:auto;
   border:solid 3px black;
-  @media screen and (max-width:$break-medium){
+  @media #{$medium-down}{
     border:none;
-  }
-  @media #(small-only){
-    position:center;
   }
 }
 ul.features{
@@ -162,20 +156,21 @@ ul.features{
   margin-left:15px;
   width:200px;
   text-align:center;
-  @media screen and (max-width:$break-medium){
+  @media #{$medium-down}{
     margin-left:0px;
+    width:713;
   }
 }
 .blackfeature{
   width:220px;
   background-color:black;
-  @media screen and (max-width:$break-medium){
-    width:737px;
+  @media #{$medium-down}{
+    width:713px;
   }
 }
 .right_oblique{
 
-  @media screen and (max-width:$break-medium){
+  @media #{$medium-down}{
     padding-left:0px;
     padding-right:0px;
   }
@@ -189,8 +184,8 @@ ul.features{
   border-bottom:0.9px solid gray;
   color:black;
   background-color:$flappy-blue;
-  @media screen and (max-width:$break-medium){
-    width:737px;
+  @media #{$medium-down}{
+    width:713px;
     border-bottom:1px solid gray;
     border-opacity:0.6;
   }
@@ -200,7 +195,7 @@ ul.features{
     font-family: 'Lato', sans-serif;
     font-weight:700;
     font-size:22px;
-    @media screen and (max-width:$break-medium){
+    @media #{$medium-down}{
       margin-top:20px;
       margin-left:30px;
       margin-bottom:20px;
@@ -223,7 +218,7 @@ footer{
     padding-left:30px;
     border-left:3px solid $flappy-blue;
     margin-top:30px;
-    @media screen and (max-width:$break-medium){
+    @media #{$medium-down}{
       border-left:0px;
     }
   }
@@ -249,7 +244,7 @@ a:visited{
   color:$flappy-blue;
 }
 div.flappyCopyRight.row{
-  @media screen and (max-width:$break-medium){
+  @media #{$medium-down}{
   margin:0px;
   }
 }
@@ -258,7 +253,7 @@ div.flappyCopyRight.row{
   font-weight:700;
   text-align:center;
   background-color:$flappy-blue;
-  @media screen and (max-width:$break-medium){
+  @media #{$medium-down}{
     background-color:$flappy-dark-grey;
     color:white;
 
