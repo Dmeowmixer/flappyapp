@@ -39,12 +39,15 @@ header{
     display:block;
     color:$flappy-blue;
       @media screen and (max-width:$break-medium){
-        margin-left:160px;
+        margin-left
+        :160px;
         font-size:20px;
         height:100px;
-      @media screen and (max-width:$break-small){
+        @media screen and (max-width:$break-small){
         display:inline-block;
+        word-spacing:1px;
       }
+      
       }
     .linebreak{
       @media screen and (max-width:$break-medium){
@@ -68,6 +71,9 @@ header{
     @media screen and (max-width:$break-medium){
       margin-left:30px;
       margin-top:-110px;
+    }
+    @media #{$small-only} {
+      
     }
   }
   .sub-nav{
@@ -129,6 +135,8 @@ header{
     color:white;
   }
 }
+// END HEADER
+
 .cheese{
   @media screen and (max-width:$break-medium){
     padding-left:0px;
@@ -143,6 +151,9 @@ header{
   border:solid 3px black;
   @media screen and (max-width:$break-medium){
     border:none;
+  }
+  @media #(small-only){
+    position:center;
   }
 }
 ul.features{
@@ -182,7 +193,6 @@ ul.features{
     width:737px;
     border-bottom:1px solid gray;
     border-opacity:0.6;
-
   }
 }
 .content_text{
