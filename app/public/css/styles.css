@@ -5563,7 +5563,7 @@ body {
 .abdominals {
   padding-top: 40px;
   background-color: white; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width:64em) {
     .abdominals {
       padding-top: 0px; } }
 
@@ -5574,6 +5574,12 @@ header {
   position: relative;
   background-color: #2B2D33;
   padding-bottom: 20px; }
+  @media screen and (max-width:64em) {
+    header {
+      padding-bottom: 0px; } }
+  @media only screen and (max-width: 40em) {
+    header {
+      height: 100px; } }
   header ul {
     display: inline; }
     header ul li {
@@ -5586,20 +5592,23 @@ header {
     word-spacing: 70px;
     display: block;
     color: #00CCCC; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:64em) {
       header h1 {
         margin-left: 160px;
         font-size: 20px;
-        height: 100px; }
-        @media screen and (max-width: 480px) {
-          header h1 {
-            display: inline-block;
-            word-spacing: 1px; } } }
-    @media screen and (max-width: 768px) {
+        height: 100px;
+        padding-bottom: 0px; } }
+    @media only screen and (max-width: 40em) {
+      header h1 {
+        word-spacing: 0.5px;
+        margin-left: 120px;
+        font-size: 25px;
+        letter-spacing: 0.7px; } }
+    @media screen and (max-width:64em) {
       header h1 .linebreak {
         display: block;
         color: white; } }
-    @media screen and (max-width: 480px) {
+    @media only screen and (max-width: 40em) {
       header h1 .linebreak {
         display: inline; } }
   header .birdnturtlesimg {
@@ -5610,13 +5619,15 @@ header {
     height: 90px;
     width: 110px;
     background-repeat: no-repeat; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:64em) {
       header .birdnturtlesimg {
-        margin-left: 30px;
-        margin-top: -110px; } }
-    @media screen and (max-width: 480px) {
+        margin-left: 1px;
+        margin-top: -120px; } }
+    @media only screen and (max-width: 40em) {
       header .birdnturtlesimg {
-        margin-left: 5px; } }
+        display: inline-block;
+        word-spacing: 1px;
+        background-size: 100%; } }
   header .sub-nav {
     font-family: 'Lato', sans-serif;
     font-weight: 800;
@@ -5624,9 +5635,12 @@ header {
     padding-left: 0px;
     color: #00CCCC;
     margin-top: 40px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:64em) {
       header .sub-nav {
         padding-right: 25px; } }
+    @media only screen and (max-width: 40em) {
+      header .sub-nav {
+        display: none; } }
     header .sub-nav nav ul {
       margin-left: 0px; }
       header .sub-nav nav ul li.nav_item {
@@ -5634,12 +5648,9 @@ header {
         margin-left: 0px;
         letter-spacing: 0.8px;
         word-spacing: 15px; }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width:64em) {
           header .sub-nav nav ul li.nav_item {
             border-bottom: 0px; } }
-        @media screen and (max-width: 480px) {
-          header .sub-nav nav ul li.nav_item {
-            display: none; } }
         header .sub-nav nav ul li.nav_item:hover {
           border-color: white; }
           header .sub-nav nav ul li.nav_item:hover a {
@@ -5662,7 +5673,7 @@ header {
   header .sub-nav:hover {
     color: white; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:64em) {
   .cheese {
     padding-left: 0px;
     padding-right: 0px; } }
@@ -5673,9 +5684,13 @@ header {
   height: 260px;
   width: auto;
   border: solid 3px black; }
-  @media screen and (max-width: 768px) {
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
     .main_image {
       border: none; } }
+  @media only screen and (max-width: 40em) {
+    .main_image {
+      margin-left: -80%;
+      margin-top: -38px; } }
 
 ul.features {
   font-family: 'Lato', sans-serif;
@@ -5683,42 +5698,59 @@ ul.features {
   margin-left: 15px;
   width: 200px;
   text-align: center; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width:64em) {
     ul.features {
-      margin-left: 0px; } }
+      margin-left: 0px;
+      width: 715; } }
+  @media only screen and (max-width: 40em) { }
 
 .blackfeature {
   width: 220px;
-  background-color: black; }
-  @media screen and (max-width: 768px) {
+  background-color: #2B2D33; }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
     .blackfeature {
-      width: 737px; } }
+      width: 427%;
+      height: 160%; } }
+  @media only screen and (max-width: 40em) {
+    .blackfeature {
+      width: 219%;
+      height: 80px;
+      padding-top: 25px;
+      font-size: 20px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:64em) {
   .right_oblique {
     padding-left: 0px;
     padding-right: 0px; } }
 
 .feature_list_item {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   width: 220px;
   font-size: 13px;
   padding-top: 15px;
   text-align: center;
   height: 58px;
   border-bottom: 0.9px solid gray;
-  color: black;
+  color: #2B2D33;
   background-color: #00CCCC; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width:64em) {
     .feature_list_item {
-      width: 737px;
+      width: 427%;
       border-bottom: 1px solid gray;
       border-opacity: 0.6; } }
+  @media only screen and (max-width: 40em) {
+    .feature_list_item {
+      width: 219%;
+      height: 80px;
+      padding-top: 25px;
+      font-size: 18px; } }
 
 .content_text p {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 22px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width:64em) {
     .content_text p {
       margin-top: 20px;
       margin-left: 30px;
@@ -5730,13 +5762,19 @@ footer {
   background-image: url("/images/border.png");
   background-repeat: repeat-x;
   background-color: #2B2D33; }
+  @media only screen and (max-width: 40em) {
+    footer .middlefoot {
+      display: none; } }
   footer .feet {
     padding-left: 30px;
     border-left: 3px solid #00CCCC;
     margin-top: 30px; }
     footer .feet li:hover a {
       color: white; }
-    @media screen and (max-width: 768px) {
+    @media only screen and (max-width: 40em) {
+      footer .feet li:hover {
+        display: inline-block; } }
+    @media screen and (max-width:64em) {
       footer .feet {
         border-left: 0px; } }
 
@@ -5756,7 +5794,7 @@ a:visited {
 .text {
   color: #00CCCC; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:64em) {
   div.flappyCopyRight.row {
     margin: 0px; } }
 
@@ -5765,7 +5803,7 @@ a:visited {
   font-weight: 700;
   text-align: center;
   background-color: #00CCCC; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width:64em) {
     .copyright {
       background-color: #2B2D33;
       color: white; } }

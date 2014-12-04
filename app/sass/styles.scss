@@ -1,8 +1,7 @@
 @import "http://fonts.googleapis.com/css?family=Lato:400,700.css";
-@import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation.scss";
-$break-small: 480px;
-$break-medium:768px;
+@import "partials/settings";
+
 $flappy-dark-grey:#2B2D33;
 $flappy-blue:#00CCCC;
 
@@ -24,6 +23,12 @@ header{
   position:relative;
   background-color:$flappy-dark-grey;
   padding-bottom:20px;
+  @media #{$medium-down}{
+    padding-bottom:0px;
+  }
+  @media #{$small-only}{
+    height:100px;
+  }
   ul{
     display:inline;
     li{
@@ -42,11 +47,13 @@ header{
         margin-left:160px;
         font-size:20px;
         height:100px;
+        padding-bottom:0px;
       }
       @media #{$small-only}{
-      display:inline-block;
-      word-spacing:1px;
-      margin-left:100px;
+      word-spacing:0.5px;
+      margin-left:120px;
+      font-size:25px;
+      letter-spacing:0.7px;
       }
 
     .linebreak{
@@ -69,14 +76,16 @@ header{
     width:110px;
     background-repeat:no-repeat;
     @media #{$medium-down}{
-      margin-left:30px;
-      margin-top:-110px;
+      margin-left:1px;
+      margin-top:-120px;
     }
     @media #{$small-only}{
     display:inline-block;
     word-spacing:1px;
+    background-size:100%;
     }
   }
+  // End Bird n turtles image
   .sub-nav{
     font-family: 'Lato', sans-serif;
     font-weight:800;
@@ -86,6 +95,9 @@ header{
     margin-top:40px;
     @media #{$medium-down}{
       padding-right:25px;
+    }
+    @media #{$small-only}{
+      display:none;
     }
     nav ul{
       margin-left:0px;
@@ -146,8 +158,12 @@ header{
   height:260px;
   width:auto;
   border:solid 3px black;
-  @media #{$medium-down}{
+  @media #{$medium-only}{
     border:none;
+  }
+  @media #{$small-only}{
+    margin-left:-80%;
+    margin-top:-38px;
   }
 }
 ul.features{
@@ -158,14 +174,23 @@ ul.features{
   text-align:center;
   @media #{$medium-down}{
     margin-left:0px;
-    width:713;
+    width:715;
+  }
+  @media #{$small-only}{
   }
 }
 .blackfeature{
   width:220px;
-  background-color:black;
-  @media #{$medium-down}{
-    width:713px;
+  background-color:$flappy-dark-grey;
+  @media #{$medium-only}{
+    width:427%;
+    height:160%
+  }
+  @media #{$small-only}{
+    width:219%;
+    height:80px;
+    padding-top:25px;
+    font-size:20px;
   }
 }
 .right_oblique{
@@ -176,18 +201,28 @@ ul.features{
   }
 }
 .feature_list_item{
+  font-family: 'Lato', sans-serif;
+  font-weight:700;
   width:220px;
   font-size:13px;
   padding-top:15px;
   text-align:center;
   height:58px;
   border-bottom:0.9px solid gray;
-  color:black;
+  color:$flappy-dark-grey;
   background-color:$flappy-blue;
   @media #{$medium-down}{
-    width:713px;
+    width:427%;
     border-bottom:1px solid gray;
     border-opacity:0.6;
+
+  }
+    @media #{$small-only}{
+    width:219%;
+ 
+    height:80px;
+    padding-top:25px;
+    font-size:18px;
   }
 }
 .content_text{
@@ -209,10 +244,18 @@ footer{
   background-image:url("/images/border.png");
   background-repeat:repeat-x;
   background-color:$flappy-dark-grey;
+  .middlefoot{
+    @media #{$small-only}{
+      display:none;
+    }
+  }
   .feet{
     & li:hover{
       a{
         color:white;
+      }
+      @media #{$small-only}{
+        display:inline-block;
       }
     }
     padding-left:30px;
@@ -222,7 +265,6 @@ footer{
       border-left:0px;
     }
   }
-
 }
 ul{
   color:$flappy-blue;
@@ -256,6 +298,5 @@ div.flappyCopyRight.row{
   @media #{$medium-down}{
     background-color:$flappy-dark-grey;
     color:white;
-
   }
 }
